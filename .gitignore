@@ -5,6 +5,8 @@ lib/**/*.py
 lib/**/*.mpy
 
 # MacroPad local directories
+._lib
 .Trashes
 .fseventsd/**/**
 .metadata_never_index
+lib/**/**
