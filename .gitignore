@@ -3,3 +3,13 @@ boot_out.txt
 .idea
 lib/**/*.py
 lib/**/*.mpy
+
+# MacroPad local directories
+._lib
+.Trashes
+.fseventsd/**/**
+.metadata_never_index
+lib/**/**
+System Volume Information/**/**
+lib/LICENSE
+lib/README.md

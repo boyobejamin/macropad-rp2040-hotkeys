@@ -1,27 +1,28 @@
-# Media Control Hotkeys (MacOS)
+# Zoom Hotkeys (Win)
 
+from adafruit_hid.keycode import Keycode
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 import keyconfig
 
 app = {
-    'name' : 'Media', # Application name
+    'name' : 'Google Meet (Win)', # Application name
     'macros' : [
         # COLOR    LABEL    KEY SEQUENCE
         # 1st row ----------
+        (0x540908, 'Audio', [Keycode.CONTROL, Keycode.D]),
         (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
-        (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
-        (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
+        (0x04541B, 'Video', [Keycode.CONTROL, Keycode.E]),
         # 2nd row ----------
         (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
         (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
-        (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
+        (0x000754, 'Leave', [Keycode.CONTROL, Keycode.W]),
         # 3rd row ----------
-        (0x202000, '<<', [[ConsumerControlCode.SCAN_PREVIOUS_TRACK]]),
-        (0x002000, 'Play/Pause', [[ConsumerControlCode.PLAY_PAUSE]]),
-        (0x202000, '>>', [[ConsumerControlCode.SCAN_NEXT_TRACK]]),
+        (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
+        (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
+        (keyconfig.LED_BLANK, keyconfig.KEY_BLANK, []),
         # 4th row ----------
         (0x200000, keyconfig.KEY_MUTE, [[ConsumerControlCode.MUTE]]),
         (0x080F54, keyconfig.KEY_VOL_DOWN, [[ConsumerControlCode.VOLUME_DECREMENT]]),
-        (0x080F54, keyconfig.KEY_VOL_UP, [[ConsumerControlCode.VOLUME_INCREMENT]]),
+        (0x080F54, keyconfig.KEY_VOL_UP, [[ConsumerControlCode.VOLUME_INCREMENT]])
     ]
 }
