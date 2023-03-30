@@ -9,13 +9,13 @@ app = {
     'macros' : [
         # COLOR    LABEL    KEY SEQUENCE
         # 1st row ----------
-        (0x200000, 'Mute', [Keycode.CONTROL, Keycode.OPTION, Keycode.M]),
+        (0x200000, 'Mute', [Keycode.CONTROL, Keycode.SHIFT, Keycode.M]),
         (keyconfig.LED_BLANK, 'Reply', ['r']),
         (keyconfig.LED_BLANK, 'SS', [Keycode.CONTROL, Keycode.SHIFT, Keycode.V]),
         # 2nd row ----------
         (keyconfig.LED_BLANK, 'VAD', [Keycode.CONTROL, Keycode.SHIFT, Keycode.Q]),
-        (keyconfig.LED_BLANK, 'Upld', [Keycode.CONTROL, Keycode.SHIFT, 'm']),
-        (0x04541B, 'PTT', ['d']),
+        (keyconfig.LED_BLANK, 'Upld', [Keycode.CONTROL, Keycode.SHIFT, 'u']),
+        (0x04541B, 'PTT', ['F2']),
         # 3rd row ----------
         (keyconfig.LED_BLANK, 'Def', [Keycode.CONTROL, Keycode.SHIFT, 'd']),
         (keyconfig.LED_BLANK, 'Acc', [Keycode.CONTROL, Keycode.ENTER]),

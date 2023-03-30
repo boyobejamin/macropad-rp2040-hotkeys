@@ -10,3 +10,6 @@ lib/**/*.mpy
 .fseventsd/**/**
 .metadata_never_index
 lib/**/**
+System Volume Information/**/**
+lib/LICENSE
+lib/README.md
